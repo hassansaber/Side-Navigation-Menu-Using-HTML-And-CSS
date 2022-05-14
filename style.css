@@ -59,6 +59,7 @@
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
   display: none;
+  transition: top 0.5s;
 }
 
 .nav-links li:hover a {
@@ -86,4 +87,30 @@
 }
 .nav-links li:nth-child(6):hover ~ .active {
   top: 85.6%;
+}
+
+.logo-icon {
+  display: none;
+  width: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    width: 110px;
+  }
+  .logo-icon {
+    display: block;
+  }
+  .logo-img {
+    display: none;
+  }
+  .nav-links li a p {
+    display: none;
+  }
+  .nav-links li a i {
+    margin-right: 0;
+  }
+  .nav-links li a {
+    justify-content: center;
+  }
 }
